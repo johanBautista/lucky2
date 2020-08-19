@@ -8,23 +8,26 @@
     <title>Lucky-GAME</title>
   </head>
   <body>
-    <div class="diseny">
+    <div class="cover-page">
       <div class="main">
-        <h1>score??</h1>
+        <h1 class="score">score??</h1>
 
-        <div id="game-over" class="gameOver"></div>
-        <div id="game-winner" class="gameWinn"></div>
+        <button class="start-screen" id="startScreen"></button>
 
-        <div id="start-screen"></div>
-        <canvas id="myGame"></canvas>
-        <div id="inicio" class="inicioScreen">
-          <div id="loadGame" class="start">
-            <button id="start-btn" class="btn">
-              START
-            </button>
-          </div>
+        <div id="intro" class="intro">
+          <h1>A partir de aqui una animacion del intro</h1>
+          <button class="btn" id="startBtn">START</button>
         </div>
+
+        <canvas id="myGame" width="350" height="250" class="myGame"></canvas>
       </div>
     </div>
+
+    <!-- scripts js  -->
+    <script src="js/enemy.js"></script>
+    <script src="js/lucky.js"></script>
+    <script src="js/floor.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
