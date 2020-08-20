@@ -12,11 +12,13 @@ document.onload = (function () {
   });
 
   let game;
+
   let start = document
     .getElementById('startBtn')
     .addEventListener('click', function () {
       game = new Game(ctx, canvas.width, canvas.height);
-      game.start();
+      // game.start();
+      game.update();
     });
 })();
 

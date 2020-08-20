@@ -5,6 +5,7 @@
 .cover-page {
   background-image: url('images/backg/background.png');
   height: 760px;
+  width: 112%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
