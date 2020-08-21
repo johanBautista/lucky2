@@ -1,9 +1,12 @@
 class Lucky {
-  constructor(x, y, ctx) {
+  constructor(x, y, ctx, enemigo) {
     this.ctx = ctx;
     this.y = y;
     this.x = x;
+    this.gravity = 2;
+    this.run = 0.5;
   }
+
   draw() {
     // console.log('desde lucky');
     ctx.beginPath();
@@ -24,5 +27,18 @@ class Lucky {
   }
   moveDown() {
     this.y += 50;
+  }
+  gravedad() {
+    this.y += this.gravity;
+    this.x += this.run;
+  }
+
+  control() {
+    this.draw();
+    this.moveDown();
+    this.moveJump();
+    this.moveLeft();
+    this.moveRight();
+    this.gravedad();
   }
 }
